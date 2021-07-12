@@ -248,7 +248,7 @@ hr{
         width: 100%;
     }
 
-    .players,  .blogs, .cards{
+    .players,  .blogs{
         grid-template-columns: repeat(2,1fr);
     }
     
