@@ -1,0 +1,255 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+/* utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.container{
+    width: 870px;
+    /* height: 679px; */
+    border-radius: 5px;
+    margin-bottom: 21px;
+    background-color: white;
+}
+.container-2{
+    width: 870px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.section-header{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+hr{
+    width: 807px;
+    height: 0px;
+    border: 1px solid #D1D1D1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* --------------------
+    top player styles 
+----------------------- */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:30px;
+    margin-left: 30px;
+}
+
+.player{
+    display: flex;
+    align-items: center;
+}
+
+.players .player img{
+    width: 56px;
+    height: 56px;
+}
+
+.players-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+/* --------------------
+    top blog styles 
+----------------------- */
+.blogs{
+    margin-left: 30px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap:26px;
+}
+
+.blog{
+    display: flex;
+    align-items: center;
+}
+
+.blogs .blog .blog-img img{
+    width: 177px;
+    height: 117px;
+}
+
+.blogs .blog .blog-text{
+    margin-left: 16px;
+}
+
+.blogs .blog .blog-text h3{
+    font-size: 20px;
+    color: #000000;
+}
+
+.blogs .blog .blog-text p{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+
+.blogs .blog .blog-text a{
+    color: #562EFF;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* --------------------
+    top blog styles 
+----------------------- */
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 28px;
+}
+
+.card{
+    width: 252px;
+    min-height: 269px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.cards .card .card-elements{
+    padding: 15px;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+}
+
+.cards .card .card-elements img{
+    height: 104px;
+    width: 224px;
+}
+
+.cards .card .card-elements h3{
+    color: #1E1E1E;
+    font-size: 20px;
+    margin-bottom: 7px;
+    margin-top: 19px;
+}
+
+.cards .card .card-elements .author{
+    font-size: 14px;
+    color: #ED6B4F;
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-footer .stars .fa-star.filed{
+    color: #FFC014;
+    height: 11px;
+    width: 12px;
+    margin-right: 3px;
+}
+
+.card-footer .stars .fa-star.empty{
+    color: #AEAEAE;;
+    height: 11px;
+    width: 12px;
+}
+
+.card-footer .ratings .rate{
+    color: #A2A2A2;
+    font-size: 14px;
+}
+
+.card-footer .corse-length{
+    color: #FF4A60;
+    background-color: #FFE4E8;
+    border-radius: 16px;
+    padding: 5px;
+}
+
+.card-footer .corse-length i{
+    width: 20px;
+    height: 20px;
+}
+
+.card-footer .corse-length span{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* --------------------
+    media query 
+----------------------- */
+
+/* mobile device */
+
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .container-2{
+        width: 100%;
+        padding: 10px;
+    }
+    .players,  .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .section-header{
+        text-align: center;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 150px;
+        min-height: 269px;
+        margin-bottom: 20px;
+    }
+
+    .card-footer .stars{
+        display: none;
+    }
+
+    .cards .card .card-elements img{
+        width: 130px;
+    }
+
+    .player, .blog, .card{
+        flex-direction: column;
+    }
+}
+
+/* tablet devices */
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container, .container-2{
+        width: 100%;
+    }
+
+    .players,  .blogs{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
